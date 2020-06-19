@@ -6,4 +6,4 @@ func fibs(_ n: Int) -> Int {
     }
     return fibs(n - 1) + fibs(n - 2)
 }
-print(fibs(3)) // Test case
+print(fibs(10)) // Test case
