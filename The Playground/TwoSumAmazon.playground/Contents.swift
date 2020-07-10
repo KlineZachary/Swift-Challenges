@@ -1,20 +1,16 @@
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var output: [Int] = []
-        
+        var hashMap : [Int:Int] = [:]        
         for i in 0..<nums.count{
-            let num = nums[i]
-            let next = i + 1
-            for j in next..<nums.count{
-                let numTwo = nums[j]
-                if num + numTwo == target{
-                    output.append(contentsOf: [i,j])
-                    break
-                }
+            let difference = target - nums[i]
+            if let value = hashMap[difference]{
+                return [value, i]
+            }else{
+                hashMap[nums[i]] = i
             }
+           
         }
-        return output
-        
+        return []
     }
 }
 var test = Solution()
