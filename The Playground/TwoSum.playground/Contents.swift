@@ -1,27 +1,25 @@
-class Solution {
-    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var output: [Int] = []
-        
-        for i in 0..<nums.count{
-            let num = nums[i]
-            let next = i + 1
-            for j in next..<nums.count{
-                let numTwo = nums[j]
-                if num + numTwo == target{
-                    output.append(contentsOf: [i,j])
-                    break
-                }
-            }
-        }
-        return output
-    }
-}
+//class Solution {
+//    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+//        var output: [Int] = []
+//
+//        for i in 0..<nums.count{
+//            let num = nums[i]
+//            let next = i + 1
+//            for j in next..<nums.count{
+//                let numTwo = nums[j]
+//                if num + numTwo == target{
+//                    output.append(contentsOf: [i,j])
+//                    break
+//                }
+//            }
+//        }
+//        return output
+//    }
+//}
+//
 
-var output = Solution()
-print(output.twoSum([3,2,4], 6))
 
 //Quicker Solution
-/*
  
  
  class Solution {
@@ -37,8 +35,9 @@ print(output.twoSum([3,2,4], 6))
      }
  }
  
+ var output = Solution()
+ print(output.twoSum([3,2,4], 6))
  
  
  
- */
  

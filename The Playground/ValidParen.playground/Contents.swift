@@ -48,4 +48,4 @@ class Solution {
 }
 
 let output = Solution()
-print(output.isValid("()"))
+print(output.isValid("{{(})}"))
