@@ -16,7 +16,7 @@ class DeckOfCards{
     var cards: [Int]
     init(){
         self.cards = []
-        for _ in 0..<52{cards.append(Int.random(in: 0..<52))}
+        for _ in 0..<52{cards.append(Int.random(in: 1...13))}
     }
 
     func serveCard() -> Int{

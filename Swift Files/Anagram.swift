@@ -10,10 +10,10 @@ func printAnagrams(_ words: [String]){
             var anotherSorted = sortedWords[j].lowercased()
 
             if word == anotherSorted{
-                anagramList.insert(word)
+                anagramList.insert(words[i])
                 anagramList.insert(words[j])
 
-                print("\(word) and \(words[j]) are anagrams")
+                print("\(words[i]) and \(words[j]) are anagrams")
             }
         }
     }
