@@ -24,10 +24,13 @@ class Solution {
 
         for i in 1..<nums.count{
             leftProducts[i] = nums[i - 1] * leftProducts[i - 1]
+            // print(leftProducts[i])
         }
 
         for i in (0...nums.count - 2).reversed(){
             rightProducts[i] = nums[i + 1] * rightProducts[i + 1]
+            // print(rightProducts[i])
+
         }
 
         for i in 0..<leftProducts.count{
