@@ -1,6 +1,6 @@
 class Solution {
     func maxSubArray(_ nums: [Int]) -> Int {
-        var maxSum = nums[0]
+        var maxSum = Int.min
         var currentSum = 0
         for num in nums{
             var tempSum = currentSum + num

@@ -7,7 +7,7 @@ func printAnagrams(_ words: [String]){
         var word = String(words[i].lowercased().sorted())
 
         for j in i + 1..<sortedWords.count{
-            var anotherSorted = sortedWords[j].lowercased()
+            var anotherSorted = sortedWords[j]
 
             if word == anotherSorted{
                 anagramList.insert(words[i])

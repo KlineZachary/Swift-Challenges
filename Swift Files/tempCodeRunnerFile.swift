@@ -1,1 +1,2 @@
-        // top += 1
+
+    for i in 1..<numRows{
