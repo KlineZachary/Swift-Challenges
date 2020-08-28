@@ -1,2 +1,1 @@
-
-    for i in 1..<numRows{
+    return true
